@@ -5,12 +5,14 @@ import IncomeTaxCalculator from "./pages/LetzTax/IncomeTaxCalculator";
 import TaxDeadlines from "./pages/LetzTax/TaxDeadlines";
 import NotFound from "./pages/NotFound";
 import DocumentChecklist from "./pages/LetzTax/DocumentChecklist";
+import LetzTaxHome from "./pages/LetzTax/LetzTaxHome";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/letztax" element={<LetzTaxHome />} />
         <Route path="/letztax/tax-class-guide" element={<TaxClassGuide />} />
         <Route path="/letztax/income-tax-calculator" element={<IncomeTaxCalculator />} />
         <Route path="/letztax/deadlines" element={<TaxDeadlines />} />
