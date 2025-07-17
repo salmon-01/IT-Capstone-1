@@ -1,59 +1,10 @@
+import Header from '../components/Header';
+
 function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200/50 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">LG</span>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                LetzGrid
-              </span>
-            </div>
-            <nav className="hidden md:flex items-center space-x-12">
-              <a
-                href="/letztax"
-                className="text-slate-600 hover:text-slate-900 transition-all duration-300 font-medium relative group text-sm"
-              >
-                LetzTax
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#letzwork"
-                className="text-slate-600 hover:text-slate-900 transition-all duration-300 font-medium relative group text-sm"
-              >
-                LetzWork
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#letzschool"
-                className="text-slate-600 hover:text-slate-900 transition-all duration-300 font-medium relative group text-sm"
-              >
-                LetzSchool
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </nav>
-            <button className="md:hidden p-2 text-slate-600 hover:text-slate-900 transition-colors">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
