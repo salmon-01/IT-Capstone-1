@@ -17,75 +17,61 @@ const TaxClassGuide: React.FC = () => {
       over64WithModeration: "1a",
     },
     {
-      situation: "Married persons taxed collectively",
+      situation: "Married couples - Collective taxation",
       withoutChildren: "2",
       withChildren: "2",
       over64WithModeration: "2",
     },
     {
-      situation:
-        "Married persons taxed collectively who jointly request individual taxation (with or without income reallocation) (*)",
+      situation: "Married couples - Individual taxation (*)",
       withoutChildren: "1",
       withChildren: "1",
       over64WithModeration: "1",
     },
     {
-      situation:
-        "Married persons, where one is a resident taxpayer and the other is a non-resident person",
+      situation: "Married couples - One resident, one non-resident",
       withoutChildren: "1",
       withChildren: "1a",
       over64WithModeration: "1a",
     },
     {
-      situation:
-        "Upon joint request, spouses taxed collectively who do not live separately, where one is a resident taxpayer and the other is a non-resident person, provided that the resident spouse earns at least 90% of the household's professional income in Luxembourg during the tax year",
+      situation: "Registered partners - Collective taxation",
       withoutChildren: "2",
       withChildren: "2",
       over64WithModeration: "2",
     },
     {
-      situation:
-        "Upon joint request, partners taxed collectively - who have shared a common domicile or residence throughout the tax year, and - whose partnership has existed throughout the year",
-      withoutChildren: "2",
-      withChildren: "2",
-      over64WithModeration: "2",
-    },
-    {
-      situation:
-        "Partners taxed collectively upon joint request, who jointly request individual taxation (with income reallocation)",
+      situation: "Registered partners - Individual taxation",
       withoutChildren: "1",
       withChildren: "1",
       over64WithModeration: "1",
     },
     {
-      situation: "Partners not requesting collective taxation (**)",
+      situation: "Registered partners - No collective taxation (**)",
       withoutChildren: "1",
       withChildren: "1a",
       over64WithModeration: "1a",
     },
     {
-      situation:
-        "Divorced person, legally separated or factually separated by dispensation of law or judicial authority",
+      situation: "Divorced or separated persons",
       withoutChildren: "1",
       withChildren: "1a",
       over64WithModeration: "1a",
     },
     {
-      situation:
-        "Divorced person, legally separated or factually separated by dispensation of law or judicial authority during the 3 years preceding the tax year (transitional period)",
+      situation: "Divorced/separated - Within 3 years (transitional)",
       withoutChildren: "2",
       withChildren: "2",
       over64WithModeration: "2",
     },
     {
-      situation: "Widower / Widow",
+      situation: "Widow/Widower",
       withoutChildren: "1a",
       withChildren: "1a",
       over64WithModeration: "1a",
     },
     {
-      situation:
-        "Widower / Widow whose marriage was dissolved by death during the 3 years preceding the tax year (transitional period)",
+      situation: "Widow/Widower - Within 3 years (transitional)",
       withoutChildren: "2",
       withChildren: "2",
       over64WithModeration: "2",
@@ -207,41 +193,65 @@ const TaxClassGuide: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-            <h3 className="text-lg font-semibold text-blue-900 mb-4">
-              Key Definitions
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-blue-800">
-              <div>
-                <h4 className="font-semibold mb-2">Collective Taxation</h4>
-                <p>
-                  Married couples or registered partners can choose to be taxed
-                  together, combining their incomes.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Individual Taxation</h4>
-                <p>
-                  Each spouse is taxed separately on their own income, even if
-                  married.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Income Reallocation</h4>
-                <p>
-                  A mechanism to redistribute income between spouses for tax
-                  optimization purposes.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Transitional Period</h4>
-                <p>
-                  A 3-year period following divorce or death where special tax
-                  class rules apply.
-                </p>
-              </div>
+                  <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+          <h3 className="text-lg font-semibold text-blue-900 mb-4">
+            Key Definitions
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-blue-800">
+            <div>
+              <h4 className="font-semibold mb-2">Collective Taxation</h4>
+              <p>
+                Married couples or registered partners can choose to be taxed
+                together, combining their incomes.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">Individual Taxation</h4>
+              <p>
+                Each spouse is taxed separately on their own income, even if
+                married.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">Income Reallocation</h4>
+              <p>
+                A mechanism to redistribute income between spouses for tax
+                optimization purposes.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2">Transitional Period</h4>
+              <p>
+                A 3-year period following divorce or death where special tax
+                class rules apply.
+              </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 bg-gray-50 border border-gray-200 rounded-lg p-6">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            Complex Situations Explained
+          </h3>
+          <div className="space-y-4 text-sm text-gray-700">
+            <div>
+              <h4 className="font-semibold mb-2 text-gray-900">Married Couples - One Resident, One Non-Resident</h4>
+              <p>When one spouse is a Luxembourg resident and the other is not, they are typically taxed as class 1 (or 1a with children).</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2 text-gray-900">Registered Partners</h4>
+              <p>Same-sex couples or registered partnerships have the same tax options as married couples, but must actively choose collective taxation.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2 text-gray-900">Transitional Periods</h4>
+              <p>For 3 years after divorce or death of a spouse, special rules apply that may result in tax class 2 instead of the normal class 1/1a.</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-2 text-gray-900">Non-Resident Spouse with 90% Income Rule</h4>
+              <p>If a non-resident spouse earns less than 10% of the household's Luxembourg income, the couple may qualify for class 2 taxation.</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
