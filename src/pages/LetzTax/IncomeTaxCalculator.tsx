@@ -30,8 +30,7 @@ const IncomeTaxCalculator: React.FC = () => {
   });
 
   const [calculation, setCalculation] = useState<TaxCalculation | null>(null);
-  const [showBreakdown, setShowBreakdown] = useState(false);
-
+  
   // Luxembourg tax brackets 2024 (simplified)
   const taxBrackets: TaxBracket[] = [
     { min: 0, max: 12000, rate: 0.08 },
