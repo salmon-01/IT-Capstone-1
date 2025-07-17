@@ -288,7 +288,9 @@ const TaxClassGuide: React.FC = () => {
           <div className="lg:w-80 lg:sticky lg:top-28 lg:h-fit">
             <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg p-6 text-white shadow-lg">
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-4">Ready to Know Your Taxes?</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Ready to Know Your Taxes?
+                </h3>
                 <p className="text-blue-100 mb-6 text-sm">
                   Now that you know your tax class, calculate your Luxembourg
                   tax liability with our comprehensive calculator.
@@ -296,15 +298,15 @@ const TaxClassGuide: React.FC = () => {
                 <div className="space-y-3">
                   <button
                     onClick={() =>
-                      (window.location.href = "/letztax/calculator")
+                      (window.location.href = "/letztax/income-tax-calculator")
                     }
-                    className="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
                   >
                     Calculate My Taxes
                   </button>
                   <button
-                    onClick={() => (window.location.href = "/letztax")}
-                    className="w-full border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+                    onClick={() => (window.location.href = "/letztax/")}
+                    className="w-full border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 cursor-pointer"
                   >
                     Learn More About LetzTax
                   </button>
