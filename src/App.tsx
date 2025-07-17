@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TaxClassGuide from "./pages/LetzTax/TaxClassGuide";
 import IncomeTaxCalculator from "./pages/LetzTax/IncomeTaxCalculator";
 import TaxDeadlines from "./pages/LetzTax/TaxDeadlines";
+import NotFound from "./pages/NotFound";
+import DocumentChecklist from "./pages/LetzTax/DocumentChecklist";
 
 const App = () => {
   return (
@@ -12,6 +14,13 @@ const App = () => {
         <Route path="/letztax/tax-class-guide" element={<TaxClassGuide />} />
         <Route path="/letztax/income-tax-calculator" element={<IncomeTaxCalculator />} />
         <Route path="/letztax/deadlines" element={<TaxDeadlines />} />
+        <Route path="/letztax/document-checklist" element={<DocumentChecklist />} />
+        <Route path="*" element={<NotFound />} />
+        {/* <Route path="/letztax/tax-optimization" element={<TaxOptimization />} />
+        <Route path="/letztax/cross-border" element={<CrossBorderInfo />} />
+        <Route path="/letztax/tax-refunds" element={<TaxRefunds />} />
+        <Route path="/letztax/tax-returns" element={<TaxReturns />} />
+        <Route path="/letztax/tax-returns" element={<TaxReturns />} /> */}
         {/* <Route path="/letzwork" element={<LetzWork />} /> */}
         {/* <Route path="/letzedu" element={<LetzEdu />} /> */}
       </Routes>
