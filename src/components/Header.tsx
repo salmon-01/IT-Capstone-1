@@ -26,7 +26,7 @@ const Header = () => {
       subcategories: [
         {
           name: "Income Tax Calculator",
-          href: "/letztax/calculator",
+          href: "/letztax/income-tax-calculator",
           description: "Calculate your taxes and potential refunds",
         },
         {
