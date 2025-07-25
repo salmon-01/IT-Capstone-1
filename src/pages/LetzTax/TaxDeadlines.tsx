@@ -11,6 +11,8 @@ interface DeadlineSection {
   }[];
 }
 
+//TODO: Add reading time
+
 const TaxDeadlines: React.FC = () => {
   const deadlineData: DeadlineSection[] = [
     {
@@ -196,33 +198,33 @@ const TaxDeadlines: React.FC = () => {
 
           {/* CTA Sidebar - Right Side */}
           <div className="lg:w-80 lg:sticky lg:top-28 lg:h-fit">
-            <div className="bg-gradient-to-br from-green-500 to-blue-600 rounded-lg p-6 text-white shadow-lg">
+            <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-lg p-6 text-white shadow-lg">
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-4">
-                  Calculate Your Taxes
+                  Prepare Your Documents
                 </h3>
-                <p className="text-green-100 mb-6 text-sm">
-                  Don't wait until the deadline! Calculate your Luxembourg tax liability now and plan ahead.
+                <p className="text-orange-100 mb-6 text-sm">
+                  Don't get caught unprepared! Check our comprehensive document checklist to ensure you have everything ready for tax filing.
                 </p>
                 <div className="space-y-3">
                   <button 
-                    onClick={() => window.location.href = '/letztax/income-tax-calculator'}
-                    className="w-full bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
+                    onClick={() => window.location.href = '/letztax/document-checklist'}
+                    className="w-full bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
                   >
-                    Calculate Now
+                    View Checklist
                   </button>
                   <button 
-                    onClick={() => window.location.href = '/letztax/'}
-                    className="w-full border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition-colors duration-200 cursor-pointer"
+                    onClick={() => window.location.href = '/letztax/income-tax-calculator'}
+                    className="w-full border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors duration-200 cursor-pointer"
                   >
-                    Learn More About LetzTax
+                    Calculate Taxes
                   </button>
                 </div>
-                <div className="mt-6 text-green-100 text-xs space-y-1">
-                  <p>✓ Beat the deadline</p>
-                  <p>✓ Accurate calculations</p>
-                  <p>✓ Plan your payments</p>
-                  <p>✓ Avoid penalties</p>
+                <div className="mt-6 text-orange-100 text-xs space-y-1">
+                  <p>✓ Complete document list</p>
+                  <p>✓ Required forms</p>
+                  <p>✓ Supporting evidence</p>
+                  <p>✓ Avoid delays</p>
                 </div>
               </div>
             </div>

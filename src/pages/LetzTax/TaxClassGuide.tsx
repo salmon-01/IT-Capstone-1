@@ -8,7 +8,24 @@ interface TaxClassData {
   over64WithModeration: string;
 }
 
+//TODO: Add tooltips to the table when hovering over the tax class
+//TODO: instead of the learn more button, add a button to do a questionnaire to determine the tax class
+
 const TaxClassGuide: React.FC = () => {
+  // Function to get color classes based on tax class value
+  const getTaxClassColor = (taxClass: string) => {
+    switch (taxClass) {
+      case "1":
+        return "bg-blue-100 text-blue-800";
+      case "1a":
+        return "bg-green-100 text-green-800";
+      case "2":
+        return "bg-purple-100 text-purple-800";
+      default:
+        return "bg-gray-100 text-gray-800";
+    }
+  };
+
   const taxClassData: TaxClassData[] = [
     {
       situation: "Single person",
@@ -157,17 +174,17 @@ const TaxClassGuide: React.FC = () => {
                           <div className="max-w-md">{row.situation}</div>
                         </td>
                         <td className="px-6 py-4 text-center text-sm font-medium text-gray-900 border-b border-gray-200">
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getTaxClassColor(row.withoutChildren)}`}>
                             {row.withoutChildren}
                           </span>
                         </td>
                         <td className="px-6 py-4 text-center text-sm font-medium text-gray-900 border-b border-gray-200">
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getTaxClassColor(row.withChildren)}`}>
                             {row.withChildren}
                           </span>
                         </td>
                         <td className="px-6 py-4 text-center text-sm font-medium text-gray-900 border-b border-gray-200">
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getTaxClassColor(row.over64WithModeration)}`}>
                             {row.over64WithModeration}
                           </span>
                         </td>

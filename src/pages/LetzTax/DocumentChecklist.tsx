@@ -20,6 +20,7 @@ interface ChecklistCategory {
 //TODO: Add local storage to save the checked items
 //TODO: Add collapsible sections
 //TODO: Add a button to share the checklist
+//TODO: Change CTA -> filing tutorials
 
 const DocumentChecklist: React.FC = () => {
   const [checkedItems, setCheckedItems] = useState<Set<string>>(new Set());
@@ -359,7 +360,7 @@ const DocumentChecklist: React.FC = () => {
           </div>
 
           {/* CTA Sidebar - Right Side */}
-          <div className="lg:w-80 lg:sticky lg:top-8 lg:h-fit">
+          <div className="lg:w-80 lg:sticky lg:top-28 lg:h-fit">
             <div className="bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg p-6 text-white shadow-lg">
               <div className="text-center">
                 <h3 className="text-xl font-bold mb-4">

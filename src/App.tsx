@@ -6,6 +6,7 @@ import TaxDeadlines from "./pages/LetzTax/TaxDeadlines";
 import NotFound from "./pages/NotFound";
 import DocumentChecklist from "./pages/LetzTax/DocumentChecklist";
 import LetzTaxHome from "./pages/LetzTax/LetzTaxHome";
+import ComingSoon from "./pages/ComingSoon";
 
 const App = () => {
   return (
@@ -14,17 +15,22 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/letztax" element={<LetzTaxHome />} />
         <Route path="/letztax/tax-class-guide" element={<TaxClassGuide />} />
-        <Route path="/letztax/income-tax-calculator" element={<IncomeTaxCalculator />} />
+        <Route
+          path="/letztax/income-tax-calculator"
+          element={<IncomeTaxCalculator />}
+        />
         <Route path="/letztax/deadlines" element={<TaxDeadlines />} />
-        <Route path="/letztax/document-checklist" element={<DocumentChecklist />} />
+        <Route
+          path="/letztax/document-checklist"
+          element={<DocumentChecklist />}
+        />
         <Route path="*" element={<NotFound />} />
         {/* <Route path="/letztax/tax-optimization" element={<TaxOptimization />} />
         <Route path="/letztax/cross-border" element={<CrossBorderInfo />} />
-        <Route path="/letztax/tax-refunds" element={<TaxRefunds />} />
-        <Route path="/letztax/tax-returns" element={<TaxReturns />} />
         <Route path="/letztax/tax-returns" element={<TaxReturns />} /> */}
         {/* <Route path="/letzwork" element={<LetzWork />} /> */}
         {/* <Route path="/letzedu" element={<LetzEdu />} /> */}
+        <Route path="/coming-soon" element={<ComingSoon />} />
       </Routes>
     </BrowserRouter>
   );

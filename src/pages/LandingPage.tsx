@@ -1,4 +1,5 @@
-import Header from '../components/Header';
+import { BriefcaseBusiness, GraduationCap, Calculator } from "lucide-react";
+import Header from "../components/Header";
 
 function LandingPage() {
   return (
@@ -57,32 +58,18 @@ function LandingPage() {
               Your Complete Luxembourg Toolkit
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Three powerful platforms, one seamless experience. Everything you
+              One powerful platform, and two more coming soon, one seamless experience. Everything you
               need to succeed in Luxembourg.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid mx-auto max-w-sm gap-12">
             {/* LetzTax Card */}
             <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-blue-100 hover:border-blue-200">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
+                <Calculator color="white" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-6">
-                LetzTax
-              </h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-6">LetzTax</h3>
               <p className="text-slate-600 mb-8 leading-relaxed text-base">
                 Understand your tax class, calculate your refund, and optimize
                 deductions — all tailored for Luxembourg residents and expats in
@@ -90,7 +77,7 @@ function LandingPage() {
               </p>
               <div className="flex items-center justify-between">
                 <a
-                  href="#letztax"
+                  href="/letztax"
                   className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200 group-hover:translate-x-1 text-sm"
                 >
                   Discover LetzTax
@@ -114,8 +101,80 @@ function LandingPage() {
               </div>
             </div>
 
+            {/* LetzWork Stealth Card */}
+            {/* <div className="group bg-gradient-to-br from-slate-50 to-gray-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 hover:border-slate-300 opacity-75">
+              <div className="w-16 h-16 bg-gradient-to-br from-slate-400 to-gray-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <BriefcaseBusiness />
+              </div>
+              <h3 className="text-xl font-bold text-slate-700 mb-6">
+                LetzWork
+              </h3>
+              <p className="text-slate-500 mb-8 leading-relaxed text-base">
+                Discover English-speaking jobs in IT, Finance, Legal, and
+                Accounting across Luxembourg. Curated listings. Easy
+                applications. Employer-friendly posting platform.
+              </p>
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center text-slate-400 font-semibold text-sm">
+                  Coming Soon
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+                <div className="text-xs text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+                  💼 Professional
+                </div>
+              </div>
+            </div> */}
+
+            {/* LetzSchool Stealth Card */}
+            {/* <div className="group bg-gradient-to-br from-slate-50 to-gray-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 hover:border-slate-300 opacity-75">
+              <div className="w-16 h-16 bg-gradient-to-br from-slate-400 to-gray-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <GraduationCap />
+              </div>
+              <h3 className="text-xl font-bold text-slate-700 mb-6">
+                LetzSchool
+              </h3>
+              <p className="text-slate-500 mb-8 leading-relaxed text-base">
+                Explore and compare schools in Luxembourg with reviews,
+                curriculum details, catchment maps, and practical guidance for
+                local and expat parents.
+              </p>
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center text-slate-400 font-semibold text-sm">
+                  Coming Soon
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </span>
+                <div className="text-xs text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+                  🎓 Education
+                </div>
+              </div>
+            </div> */}
+
             {/* LetzWork Card */}
-            <div className="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-green-100 hover:border-green-200">
+            {/* <div className="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-green-100 hover:border-green-200">
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <svg
                   className="w-8 h-8 text-white"
@@ -163,10 +222,10 @@ function LandingPage() {
                   💼 Professional
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* LetzSchool Card */}
-            <div className="group bg-gradient-to-br from-purple-50 to-violet-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-purple-100 hover:border-purple-200">
+            {/* <div className="group bg-gradient-to-br from-purple-50 to-violet-50 rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-500 border border-purple-100 hover:border-purple-200">
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <svg
                   className="w-8 h-8 text-white"
@@ -220,13 +279,13 @@ function LandingPage() {
                   🎓 Education
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-900 to-slate-800">
+      {/* <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-900 to-slate-800">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 text-center">
             <div className="text-white">
@@ -247,7 +306,7 @@ function LandingPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section className="py-32 px-4 sm:px-6 lg:px-8">
@@ -262,20 +321,19 @@ function LandingPage() {
             <p className="text-lg text-slate-600 leading-relaxed mb-8">
               We understand the unique challenges and opportunities that come
               with living and working in Luxembourg. Our platform is designed
-              with the local context in mind, supporting multiple languages and
-              complying with Luxembourg's regulations and standards.
+              with the local context in mind.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
               Whether you're a resident, expat, or business owner, LetzGrid
               provides the tools and support you need to thrive in the Grand
-              Duchy.
+              Duchy. Or will very soon...
             </p>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-indigo-700">
+      {/* <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-indigo-700">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
             Ready to Get Started?
@@ -288,20 +346,21 @@ function LandingPage() {
             Visit the ecosystem
           </button>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between mb-12">
             <div className="flex items-center space-x-4 mb-6 md:mb-0">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">LG</span>
-              </div>
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-800 to-indigo-900 rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">🇱🇺</span>
+            </div>
               <span className="text-2xl font-bold">LetzGrid</span>
             </div>
             <div className="flex space-x-12">
-              <a
+              {/* TODO: Add once implemented */}
+              {/* <a
                 href="#privacy"
                 className="text-slate-300 hover:text-white transition-colors duration-200 font-medium text-sm"
               >
@@ -324,7 +383,7 @@ function LandingPage() {
                 className="text-slate-300 hover:text-white transition-colors duration-200 font-medium text-sm"
               >
                 Support
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="border-t border-slate-700 pt-10 text-center">

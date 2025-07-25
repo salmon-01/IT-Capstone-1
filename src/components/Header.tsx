@@ -51,7 +51,7 @@ const Header = () => {
         },
         {
           name: "Document Checklist",
-          href: "/letztax/checklist",
+          href: "/letztax/document-checklist",
           description: "Everything you need for filing",
         },
         {
@@ -61,75 +61,77 @@ const Header = () => {
         },
       ],
     },
-    {
-      name: "LetzWork",
-      href: "/letzwork",
-      color: "green",
-      subcategories: [
-        {
-          name: "Job Search",
-          href: "/letzwork/search",
-          description: "Find your next opportunity",
-        },
-        {
-          name: "Company Profiles",
-          href: "/letzwork/companies",
-          description: "Learn about employers",
-        },
-        {
-          name: "Career Resources",
-          href: "/letzwork/resources",
-          description: "Tools and guides for your career",
-        },
-        {
-          name: "Resume Drop",
-          href: "/letzwork/resume",
-          description: "Upload your resume to let employers find you",
-        },
-        {
-          name: "Post a Job",
-          href: "/letzwork/post",
-          description: "For employers and recruiters",
-        },
-      ],
-    },
-    {
-      name: "LetzSchool",
-      href: "/letzschool",
-      color: "purple",
-      subcategories: [
-        {
-          name: "School Directory",
-          href: "/letzschool/directory",
-          description: "Browse all schools in Luxembourg",
-        },
-        {
-          name: "School Reviews",
-          href: "/letzschool/reviews",
-          description: "Read parent and student reviews",
-        },
-        {
-          name: "Catchment Maps",
-          href: "/letzschool/maps",
-          description: "Find schools in your area",
-        },
-        {
-          name: "Curriculum Guide",
-          href: "/letzschool/curriculum",
-          description: "Understand different programs",
-        },
-        {
-          name: "Admission Guide",
-          href: "/letzschool/admission",
-          description: "How to apply and enroll",
-        },
-        {
-          name: "Parent Resources",
-          href: "/letzschool/parents",
-          description: "Support for parents",
-        },
-      ],
-    },
+    // TODO: Add LetzWork when implemented
+    // {
+    //   name: "LetzWork",
+    //   href: "/letzwork",
+    //   color: "green",
+    //   subcategories: [
+    //     {
+    //       name: "Job Search",
+    //       href: "/letzwork/search",
+    //       description: "Find your next opportunity",
+    //     },
+    //     {
+    //       name: "Company Profiles",
+    //       href: "/letzwork/companies",
+    //       description: "Learn about employers",
+    //     },
+    //     {
+    //       name: "Career Resources",
+    //       href: "/letzwork/resources",
+    //       description: "Tools and guides for your career",
+    //     },
+    //     {
+    //       name: "Resume Drop",
+    //       href: "/letzwork/resume",
+    //       description: "Upload your resume to let employers find you",
+    //     },
+    //     {
+    //       name: "Post a Job",
+    //       href: "/letzwork/post",
+    //       description: "For employers and recruiters",
+    //     },
+    //   ],
+    // },
+    // TODO: Add LetzSchool when implemented
+    // {
+    //   name: "LetzSchool",
+    //   href: "/letzschool",
+    //   color: "purple",
+    //   subcategories: [
+    //     {
+    //       name: "School Directory",
+    //       href: "/letzschool/directory",
+    //       description: "Browse all schools in Luxembourg",
+    //     },
+    //     {
+    //       name: "School Reviews",
+    //       href: "/letzschool/reviews",
+    //       description: "Read parent and student reviews",
+    //     },
+    //     {
+    //       name: "Catchment Maps",
+    //       href: "/letzschool/maps",
+    //       description: "Find schools in your area",
+    //     },
+    //     {
+    //       name: "Curriculum Guide",
+    //       href: "/letzschool/curriculum",
+    //       description: "Understand different programs",
+    //     },
+    //     {
+    //       name: "Admission Guide",
+    //       href: "/letzschool/admission",
+    //       description: "How to apply and enroll",
+    //     },
+    //     {
+    //       name: "Parent Resources",
+    //       href: "/letzschool/parents",
+    //       description: "Support for parents",
+    //     },
+    //   ],
+    // },
   ];
 
   const getColorClasses = (color: string) => {
@@ -177,7 +179,7 @@ const Header = () => {
       if (!isHoveringDropdown) {
         setActiveDropdown(null);
       }
-    }, 150); // 150ms delay before closing
+    }, 300); // 300ms delay before closing
   };
 
   const handleDropdownMouseEnter = () => {
@@ -209,8 +211,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-xl">LG</span>
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-800 to-indigo-900 rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-xl">🇱🇺</span>
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
               LetzGrid
@@ -254,7 +256,7 @@ const Header = () => {
                   {/* Dropdown Menu */}
                   {activeDropdown === category.name && (
                     <div
-                      className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-slate-200 py-4 z-50"
+                      className="absolute top-full right-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-slate-200 py-4 z-50"
                       onMouseEnter={handleDropdownMouseEnter}
                       onMouseLeave={handleDropdownMouseLeave}
                     >
